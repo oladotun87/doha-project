@@ -1,0 +1,273 @@
+body {
+	font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+
+}
+header{
+  background: red;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+header a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+header .current{
+	color: blue;
+	font-weight: bold;
+}
+header a:hover{
+	font-weight: bold;
+	color: grey;
+	font-size: 18px;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+#logo {
+	float: left;
+	border-radius: 50%;
+}
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+header li{
+	display: inline;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+#showcase {
+	min-height: 100%;
+	width: 100%;	
+	text-align: center;
+	background: url(../img/showcase.jpg) no-repeat;
+	background-size: 1400px 400px;
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+#showcase2 {
+	min-height: 100%;
+	width: 100%;	
+	text-align: center;
+	background: url(../img/class.jpg) no-repeat;
+	background-size: 1400px 400px;
+	color: yellow;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+#showcase3 {
+	min-height: 100%;
+	width: 100%;	
+	text-align: center;
+	background: url(../img/mission.jpg) no-repeat;
+	background-size: 1400px 400px;
+	color: darkred;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+#showcase .container .cap, #showcase2 .cap,#showcase3 .cap{
+	font-size: 70px;
+	color: red;
+}
+#showcase .container h1, #showcase2 .container h1, #showcase3 .container h1{
+	color: blue;
+	font-size: 55px
+}
+.headline {
+	text-align: left;
+	color: red;
+	margin-bottom: 0;
+	margin-left: 50px;
+}
+#slideshow{
+	position: absolute;
+	right: 1%;
+	width: 300px;
+	height: 200px;
+	background: url(../img/slide.jpg);
+	margin-top: 50px;
+	animation: slide 4s infinite;
+}
+@keyframes slide{
+	50%{
+		background: url(../img/slide.jpg);
+	}
+	75%{
+		opacity: 0.5;
+	}
+	100%{
+		background: url(../img/slide1.jpg);
+	}
+
+}
+
+#boxes{
+	margin-top: 20px; 
+	margin-right: 100px;
+
+}
+
+
+#boxes1, #boxes2{
+	margin-top: 5px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+
+ #boxes1 .box1{
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	width: 40%;
+	padding: 50px;
+}
+#boxes2 .box2{
+	text-align: center;
+	font-size: 18px;
+	width: 50%;
+	padding: 50px;
+}
+#boxes .box img{
+	width: 100px;
+}
+ #classes article {
+	float: left;
+	width: 70%;
+	margin-bottom: 50px;
+}
+#classes ul li{
+	list-style: none;
+	background: #ccc;
+	border: white 3px solid;
+	padding: 20px;
+}
+
+#contact {
+	min-height: 150px;
+	background-color: pink;
+	border: red 2px solid;
+	border-bottom: none;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+#contact .email, #contact .message{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: green solid 1px;
+	height: 30px;
+	width: 200px;
+}
+ #contact .message{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: green solid 1px;
+	height: 150px;
+	width: 300px;
+}
+#contact button{
+	height: 50px;
+	width: auto;
+	display: inline;
+	border-radius: none;
+	border: none;
+	background-color: yellowgreen;
+	font: 18px;
+	color: white; 
+	text-align: center;
+	font-weight: bold;
+}
+#contact button a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+#contact button a:hover{
+	color: red;
+}
+
+#newsletter{
+	width: 100%;
+	padding: 15px;
+	min-height: 90px;
+	background: blue;
+	color: #fff;
+	margin-bottom: 20px;
+	animation: newsflash 2s infinite;
+}
+@keyframes newsflash{
+	50%{
+		opacity: 0.5;
+	}
+}
+
+#newsletter h3{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+}
+
+
+#newsletter input{
+	
+	padding: 15px;
+	height: 25px;
+	width: 250px;
+	border: none;
+	margin-top: 10px;
+}
+#newsletter button{
+	margin-top: 20px;
+	height: 50px;
+	width: 70px
+	border: none;
+	background-color: grey;
+	padding-left: 20px;
+  	padding-right:20px;
+}
+#newsletter button a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+#newsletter button a:hover{
+	color: red;
+}
+
+footer, footer .footnav a {
+	width: 100%;
+	margin-top: 50px;
+    color: #fff;
+	background: black;
+	text-decoration: none;
+	
+}
+footer a:hover{
+	font-weight: bold;
+	color: red;
+	font-size: 18px;
